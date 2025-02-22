@@ -2,13 +2,13 @@
 
 ## 🚀 Overview
 
----
+
 
 **SecureDockerEnv** is a Python-based project that ensures secure management of environment variables in Docker. It prevents sensitive credentials from being embedded in Docker images while allowing safe injection of `.env` files at runtime. This project follows best security practices to protect secrets, prevent accidental leaks, and enhance the security of containerized applications.
 
 ## 🔒 Why Excluding `.env` Files from Docker Images is Crucial
 
----
+
 
 ### ⚠️ Security Risks of Including `.env` Files
 
@@ -22,7 +22,6 @@
 
 ## 🛠️ Approaches for Managing `.env` Files Securely
 
----
 
 This project implements two secure approaches:
 
@@ -68,7 +67,6 @@ docker build -t secure-docker-env .
 docker run --env-file .env secure-docker-env
 ```
 
----
 
 ### 📦 Approach 2: Using Docker Compose
 
@@ -95,7 +93,6 @@ docker-compose up
 
 ## 📊 Comparison: Docker (`--env-file`) vs. Docker Compose (`env_file`)
 
---- 
 
 | Feature                 | Docker (`--env-file`)           | Docker Compose (`env_file`)                |
 | ----------------------- | ------------------------------- | ------------------------------------------ |
@@ -106,7 +103,6 @@ docker-compose up
 
 ## ✅ Best Practices
 
----
 
 - Never include `.env` files in Docker images – Always use `.dockerignore`.
 - Use `--env-file` for dynamic secret management – Useful for single-container deployments.
@@ -114,13 +110,11 @@ docker-compose up
 
 ## 🎯 Conclusion
 
----
 
 By following these methods, **SecureDockerEnv** ensures `.env` files remain external to Docker images, enhancing security and flexibility. Choose `--env-file` for explicit control or Docker Compose for easier multi-container management.
 
 ## 📚 Reference
 
----
 For more details on this topic, check out the full blog post here: [Protect Sensitive Information in Docker: Accessing .env Credentials Without Exposing Them](https://shafiqulai.github.io/blogs/blog_1.html?id=1)
 
 
