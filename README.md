@@ -148,7 +148,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 ## 📚 References
 
 For more details, check out:
-- 🔗 [Protect Sensitive Information in Docker](https://shafiqulai.github.io/blogs/blog_1.html?id=1) (Full Blog Post)
+- 🔗 [Protect Sensitive Information in Docker](https://shafiqulai.github.io/blogs/blog_1.html) (Full Blog Post)
 - 🔗 [Docker Environment Variables Documentation](https://docs.docker.com/compose/how-tos/environment-variables/set-environment-variables/)
 
 
